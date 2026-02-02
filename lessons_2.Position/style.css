@@ -1,0 +1,80 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.dialog {
+    display: block; /* Діалогове вікно є блочним елементом */
+    background-color: #fff; /* Білий фон для діалогового вікна */
+    width: 800px; /* Фіксована ширина */
+    position: fixed; /* Фіксоване позінування */
+    top: 50%; /* Відсатнь від лівого вінка браузера */
+    left: 50%; /* відстань від лівого краю браузера */
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.dialog header {
+    height: 55px; /* Висота заголовка */
+    background-color: #f66; /* Червоний фон заголовка */
+}
+
+.dialog header .title {
+    font-size: 20px;
+    float: left;
+    color: white;
+    margin: 15px 0 0 15px;
+}
+
+.dialog header .my-close {
+    float: right;
+    margin: 5px 10px 0 0;
+    color: #c33;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.dialog main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    clear: both;
+    color: #332f33;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.dialog main img {
+    width: 300px;
+}
+
+.dialog footer {
+    margin-top: 25px;
+}
+
+.dialog footer hr {
+    border: 1px #ecedec solid;  /* Стиль лінії розділення */
+}
+
+.dialog footer .buttons {
+    float: right;  /* Вирівнювання кнопок по правому краю */
+    height: 30px; /* Висота контейнера для кнопок */
+    margin: 10px;
+}
+
+.dialog footer .buttons a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px #ccc solid;
+    color: #333;
+    border-radius: 5px;
+    margin: 3px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.dialog footer .buttons a:hover {
+    margin: 1px;
+    border-radius: 0;
+    padding: 7px 12px;
+}
+
+.dialog footer .buttons .danger {
+    color: #fff;
+    background-color: #ff6666;
+}
